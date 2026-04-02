@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeepInsight.Processing")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06efe5902f9d4d315262fd4a56af5ba1e76cc5dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeepInsight.Processing")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeepInsight.Processing")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
