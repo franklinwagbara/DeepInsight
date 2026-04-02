@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deep Insight SDK Test Page</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e4e4e7; line-height: 1.6; }
+    .container { max-width: 960px; margin: 0 auto; padding: 2rem; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .subtitle { color: #71717a; margin-bottom: 2rem; }
+    .card { background: #18181b; border: 1px solid #27272a; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; }
+    .card h2 { font-size: 1.1rem; margin-bottom: 1rem; color: #a5b4fc; }
+    button { background: #4f46e5; color: white; border: none; padding: 0.6rem 1.2rem; border-radius: 8px; cursor: pointer; font-size: 0.9rem; margin: 0.25rem; }
+    button:hover { background: #4338ca; }
+    button.secondary { background: #27272a; }
+    button.secondary:hover { background: #3f3f46; }
+    button.danger { background: #dc2626; }
+    input, select { background: #27272a; border: 1px solid #3f3f46; color: white; padding: 0.5rem 0.75rem; border-radius: 8px; font-size: 0.9rem; margin: 0.25rem; }
+    .log { background: #09090b; border: 1px solid #27272a; border-radius: 8px; padding: 1rem; max-height: 300px; overflow-y: auto; font-family: monospace; font-size: 0.8rem; line-height: 1.8; }
+    .log .info { color: #60a5fa; }
+    .log .success { color: #34d399; }
+    .log .error { color: #f87171; }
+    .log .event { color: #c084fc; }
+    .status-bar { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .status-badge { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.3rem 0.8rem; border-radius: 999px; font-size: 0.75rem; background: #27272a; }
+    .status-badge .dot { width: 8px; height: 8px; border-radius: 50%; }
+    .dot.green { background: #34d399; }
+    .dot.yellow { background: #fbbf24; }
+    .dot.red { background: #f87171; }
+    .nav { display: flex; gap: 0.5rem; padding: 1rem 0; border-bottom: 1px solid #27272a; margin-bottom: 2rem; }
+    .nav a { color: #a1a1aa; text-decoration: none; padding: 0.4rem 1rem; border-radius: 6px; }
+    .nav a:hover, .nav a.active { color: white; background: #27272a; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .clickable-area { width: 100%; height: 200px; background: linear-gradient(135deg, #1e1b4b, #312e81); border-radius: 12px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 1.2rem; transition: transform 0.1s; }
+    .clickable-area:active { transform: scale(0.98); }
+    .form-demo input { width: 100%; margin: 0.4rem 0; }
+    .scroll-section { height: 600px; background: linear-gradient(to bottom, #18181b, #1e1b4b, #312e81, #4f46e5); border-radius: 12px; display: flex; align-items: flex-end; justify-content: center; padding: 2rem; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>🔬 Deep Insight SDK Test Page</h1>
+  <p class="subtitle">Interactive test page for the behavior analytics SDK</p>
+
+  <!-- Status -->
+  <div class="status-bar" id="statusBar">
+    <div class="status-badge"><span class="dot yellow" id="sdkDot"></span> SDK: <span id="sdkStatus">Not loaded</span></div>
+    <div class="status-badge"><span class="dot red" id="apiDot"></span> API: <span id="apiStatus">Unknown</span></div>
+    <div class="status-badge">Session: <span id="sessionId">—</span></div>
+    <div class="status-badge">Events: <span id="eventCount">0</span></div>
+  </div>
+
+  <!-- Navigation (tests SPA navigation tracking) -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="active" data-page="home">Home</a>
+    <a href="#pricing" data-page="pricing">Pricing</a>
+    <a href="#about" data-page="about">About</a>
+    <a href="#contact" data-page="contact">Contact</a>
+  </nav>
+
+  <div class="grid">
+    <!-- Interactive Area -->
+    <div class="card">
+      <h2>Click Tracking Test</h2>
+      <div class="clickable-area" id="clickArea" data-di-track="hero-cta">
+        Click anywhere here
+      </div>
+    </div>
+
+    <!-- Form (tests input tracking + masking) -->
+    <div class="card">
+      <h2>Input Tracking Test</h2>
+      <div class="form-demo">
+        <input type="text" placeholder="Your name" id="nameInput" />
+        <input type="email" placeholder="Email address" id="emailInput" />
+        <input type="password" placeholder="Password (masked)" id="pwInput" data-di-mask />
+        <input type="text" placeholder="Credit card (auto-masked)" id="ccInput" name="credit_card" />
+        <select id="planSelect">
+          <option>Free</option>
+          <option>Pro</option>
+          <option>Enterprise</option>
+        </select>
+        <button onclick="document.getElementById('nameInput').value=''; document.getElementById('emailInput').value='';">Clear</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Frustration test -->
+  <div class="card">
+    <h2>Frustration Detection Test</h2>
+    <p style="color:#71717a; margin-bottom:1rem; font-size:0.85rem;">Click the "broken" button rapidly 3+ times to trigger rage click detection. Click the dead zone to trigger dead click detection.</p>
+    <button id="brokenBtn" onclick="/* intentionally does nothing */">Submit (broken — nothing happens)</button>
+    <div id="deadZone" style="display:inline-block; padding:0.6rem 1.2rem; background:#27272a; border-radius:8px; margin:0.25rem; cursor:pointer;">Dead click zone</div>
+    <button onclick="alert('This one works!')">Working Button</button>
+  </div>
+
+  <!-- Scroll section -->
+  <div class="card">
+    <h2>Scroll Depth Test</h2>
+    <p style="color:#71717a; margin-bottom:1rem; font-size:0.85rem;">Scroll down inside this area to test scroll depth tracking.</p>
+    <div class="scroll-section">
+      <p style="font-size:1.5rem; color:white;">🎉 You scrolled to the bottom!</p>
+    </div>
+  </div>
+
+  <!-- Event Log -->
+  <div class="card">
+    <h2>Event Log</h2>
+    <div>
+      <button class="secondary" onclick="clearLog()">Clear Log</button>
+      <button class="secondary" onclick="flushEvents()">Force Flush</button>
+    </div>
+    <div class="log" id="eventLog" style="margin-top: 1rem;">
+      <div class="info">Waiting for SDK initialization...</div>
+    </div>
+  </div>
+</div>
+
+<!-- Load SDK -->
+<script src="./src/sdk/dist/deep-insight.umd.js"></script>
+<script>
+  const PROJECT_ID = '462290cd-214d-40a5-8bc5-516551bf64a9';
+  const API_URL = 'http://localhost:5050/api/v1/ingest';
+
+  let eventCounter = 0;
+  const logEl = document.getElementById('eventLog');
+
+  function log(msg, cls = 'info') {
+    const time = new Date().toLocaleTimeString();
+    logEl.innerHTML += `<div class="${cls}">[${time}] ${msg}</div>`;
+    logEl.scrollTop = logEl.scrollHeight;
+  }
+
+  function clearLog() { logEl.innerHTML = ''; }
+
+  // Check API health
+  fetch(API_URL.replace('/ingest', '/auth/login'), { method: 'POST', headers: {'Content-Type':'application/json'}, body: '{"email":"x","password":"x"}' })
+    .then(() => {
+      document.getElementById('apiDot').className = 'dot green';
+      document.getElementById('apiStatus').textContent = 'Connected';
+      log('API server is reachable', 'success');
+    })
+    .catch(() => {
+      document.getElementById('apiDot').className = 'dot red';
+      document.getElementById('apiStatus').textContent = 'Unreachable';
+      log('API server is NOT reachable — events will queue locally', 'error');
+    });
+
+  // Initialize SDK
+  if (typeof DeepInsight !== 'undefined') {
+    const sdk = DeepInsight.default || DeepInsight;
+
+    // Monkey-patch the transport to intercept events
+    const origFetch = window.fetch;
+    let batchCount = 0;
+    window.fetch = function(...args) {
+      if (args[0] && args[0].toString().includes('/ingest')) {
+        batchCount++;
+        log(`📤 Batch #${batchCount} sent to ingest endpoint`, 'event');
+      }
+      return origFetch.apply(this, args);
+    };
+
+    try {
+      sdk.init({
+        projectId: PROJECT_ID,
+        endpoint: API_URL,
+        sampleRate: 1.0,
+        flushInterval: 3000,
+        maxBatchSize: 10,
+        privacy: {
+          maskInputs: true,
+          maskSelectors: ['[data-di-mask]'],
+        },
+        debug: true,
+      });
+
+      document.getElementById('sdkDot').className = 'dot green';
+      document.getElementById('sdkStatus').textContent = 'Active';
+      log('SDK initialized successfully!', 'success');
+      log(`Project: ${PROJECT_ID}`, 'info');
+    } catch(e) {
+      document.getElementById('sdkDot').className = 'dot red';
+      document.getElementById('sdkStatus').textContent = 'Error';
+      log(`SDK init failed: ${e.message}`, 'error');
+    }
+  } else {
+    log('SDK not loaded — check script path', 'error');
+  }
+
+  // Track clicks on the clickable area
+  document.getElementById('clickArea').addEventListener('click', (e) => {
+    eventCounter++;
+    document.getElementById('eventCount').textContent = eventCounter;
+    const rect = e.currentTarget.getBoundingClientRect();
+    log(`🖱️ Click at (${Math.round(e.clientX - rect.left)}, ${Math.round(e.clientY - rect.top)})`, 'event');
+  });
+
+  // Track nav clicks (simulates SPA navigation)
+  document.querySelectorAll('#nav a').forEach(a => {
+    a.addEventListener('click', (e) => {
+      document.querySelectorAll('#nav a').forEach(n => n.classList.remove('active'));
+      e.target.classList.add('active');
+      eventCounter++;
+      document.getElementById('eventCount').textContent = eventCounter;
+      log(`🧭 Navigation: ${e.target.dataset.page}`, 'event');
+    });
+  });
+
+  // Track form interactions
+  ['nameInput', 'emailInput', 'pwInput', 'ccInput', 'planSelect'].forEach(id => {
+    document.getElementById(id).addEventListener('input', () => {
+      eventCounter++;
+      document.getElementById('eventCount').textContent = eventCounter;
+    });
+  });
+
+  function flushEvents() {
+    log('Forcing event flush...', 'info');
+    // The SDK auto-flushes; this is just for manual testing
+    if (typeof DeepInsight !== 'undefined') {
+      const sdk = DeepInsight.default || DeepInsight;
+      if (sdk._instance && sdk._instance.flush) {
+        sdk._instance.flush();
+        log('Flush triggered', 'success');
+      } else {
+        log('No flush method available — events flush automatically', 'info');
+      }
+    }
+  }
+</script>
+
+</body>
+</html>

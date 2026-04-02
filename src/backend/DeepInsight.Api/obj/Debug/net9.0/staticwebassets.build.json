@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "qrHnwrDPt+6TrgzEdJn3K/4vjI/el39Jt/gYvAe6x7o=",
+  "Source": "DeepInsight.Api",
+  "BasePath": "_content/DeepInsight.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

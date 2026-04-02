@@ -1,0 +1,12 @@
+import { DeepInsightClient } from './core/DeepInsight';
+export type { DeepInsightConfig, BaseEvent, EventBatch } from './types/events';
+export { DeepInsightClient } from './core/DeepInsight';
+declare const instance: DeepInsightClient;
+export declare const init: (config: import(".").DeepInsightConfig) => void;
+export declare const track: (eventName: string, properties?: Record<string, unknown>) => void;
+export declare const identify: (userId: string) => void;
+export declare const pause: () => void;
+export declare const resume: () => void;
+export declare const destroy: () => void;
+export declare const getSessionId: () => string | null;
+export default instance;

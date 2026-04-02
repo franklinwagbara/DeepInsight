@@ -1,0 +1,6 @@
+@DeepInsight.Api_HostAddress = http://localhost:5251
+
+GET {{DeepInsight.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

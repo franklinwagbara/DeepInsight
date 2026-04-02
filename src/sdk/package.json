@@ -1,0 +1,26 @@
+{
+  "name": "@deep-insight/sdk",
+  "version": "1.0.0",
+  "description": "Deep Insight - User Behavior Analytics SDK",
+  "main": "dist/deep-insight.umd.js",
+  "module": "dist/deep-insight.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs",
+    "build:watch": "rollup -c rollup.config.mjs --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.0",
+    "rollup": "^4.24.0",
+    "rollup-plugin-gzip": "^4.0.0",
+    "tslib": "^2.7.0",
+    "typescript": "^5.6.0"
+  }
+}

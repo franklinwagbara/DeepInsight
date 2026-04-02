@@ -1,0 +1,17 @@
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\obj\Debug\net9.0\DeepInsight.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\obj\Debug\net9.0\DeepInsight.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\obj\Debug\net9.0\DeepInsight.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\obj\Debug\net9.0\DeepInsight.Infrastructure.AssemblyInfo.cs
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\obj\Debug\net9.0\DeepInsight.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\bin\Debug\net9.0\DeepInsight.Infrastructure.deps.json
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\bin\Debug\net9.0\DeepInsight.Infrastructure.dll
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\bin\Debug\net9.0\DeepInsight.Infrastructure.pdb
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\bin\Debug\net9.0\DeepInsight.Core.dll
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\bin\Debug\net9.0\DeepInsight.Core.pdb
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\obj\Debug\net9.0\DeepInsi.3CD7B6A8.Up2Date
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\obj\Debug\net9.0\DeepInsight.Infrastructure.dll
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\obj\Debug\net9.0\refint\DeepInsight.Infrastructure.dll
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\obj\Debug\net9.0\DeepInsight.Infrastructure.pdb
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\obj\Debug\net9.0\ref\DeepInsight.Infrastructure.dll
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\bin\Debug\net9.0\DeepInsight.Infrastructure.runtimeconfig.json
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\obj\Debug\net9.0\DeepInsight.Infrastructure.genruntimeconfig.cache

@@ -1,0 +1,17 @@
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\bin\Debug\net9.0\DeepInsight.Processing.deps.json
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\bin\Debug\net9.0\DeepInsight.Processing.dll
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\bin\Debug\net9.0\DeepInsight.Processing.pdb
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\bin\Debug\net9.0\DeepInsight.Core.dll
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\bin\Debug\net9.0\DeepInsight.Infrastructure.dll
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\bin\Debug\net9.0\DeepInsight.Core.pdb
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\bin\Debug\net9.0\DeepInsight.Infrastructure.pdb
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\obj\Debug\net9.0\DeepInsight.Processing.csproj.AssemblyReference.cache
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\obj\Debug\net9.0\DeepInsight.Processing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\obj\Debug\net9.0\DeepInsight.Processing.AssemblyInfoInputs.cache
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\obj\Debug\net9.0\DeepInsight.Processing.AssemblyInfo.cs
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\obj\Debug\net9.0\DeepInsight.Processing.csproj.CoreCompileInputs.cache
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\obj\Debug\net9.0\DeepInsi.D2110AAB.Up2Date
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\obj\Debug\net9.0\DeepInsight.Processing.dll
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\obj\Debug\net9.0\refint\DeepInsight.Processing.dll
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\obj\Debug\net9.0\DeepInsight.Processing.pdb
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Processing\obj\Debug\net9.0\ref\DeepInsight.Processing.dll

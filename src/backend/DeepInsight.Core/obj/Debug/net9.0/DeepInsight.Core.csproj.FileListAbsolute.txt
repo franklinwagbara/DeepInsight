@@ -1,0 +1,12 @@
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Core\bin\Debug\net9.0\DeepInsight.Core.deps.json
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Core\bin\Debug\net9.0\DeepInsight.Core.dll
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Core\bin\Debug\net9.0\DeepInsight.Core.pdb
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Core\obj\Debug\net9.0\DeepInsight.Core.csproj.AssemblyReference.cache
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Core\obj\Debug\net9.0\DeepInsight.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Core\obj\Debug\net9.0\DeepInsight.Core.AssemblyInfoInputs.cache
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Core\obj\Debug\net9.0\DeepInsight.Core.AssemblyInfo.cs
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Core\obj\Debug\net9.0\DeepInsight.Core.csproj.CoreCompileInputs.cache
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Core\obj\Debug\net9.0\DeepInsight.Core.dll
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Core\obj\Debug\net9.0\refint\DeepInsight.Core.dll
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Core\obj\Debug\net9.0\DeepInsight.Core.pdb
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Core\obj\Debug\net9.0\ref\DeepInsight.Core.dll
