@@ -15,3 +15,4 @@ C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.I
 C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\obj\Debug\net9.0\ref\DeepInsight.Infrastructure.dll
 C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\bin\Debug\net9.0\DeepInsight.Infrastructure.runtimeconfig.json
 C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\obj\Debug\net9.0\DeepInsight.Infrastructure.genruntimeconfig.cache
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Infrastructure\obj\Debug\net9.0\DeepInsight.Infrastructure.sourcelink.json

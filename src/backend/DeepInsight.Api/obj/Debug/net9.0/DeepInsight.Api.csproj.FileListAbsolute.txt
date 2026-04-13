@@ -144,3 +144,4 @@ C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.A
 C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Api\obj\Debug\net9.0\DeepInsight.Api.pdb
 C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Api\obj\Debug\net9.0\DeepInsight.Api.genruntimeconfig.cache
 C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Api\obj\Debug\net9.0\ref\DeepInsight.Api.dll
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Api\obj\Debug\net9.0\DeepInsight.Api.sourcelink.json

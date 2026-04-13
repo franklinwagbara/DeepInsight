@@ -10,3 +10,4 @@ C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.C
 C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Core\obj\Debug\net9.0\refint\DeepInsight.Core.dll
 C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Core\obj\Debug\net9.0\DeepInsight.Core.pdb
 C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Core\obj\Debug\net9.0\ref\DeepInsight.Core.dll
+C:\Users\fwagbara\source\repos\My-Projects\DeepInsight\src\backend\DeepInsight.Core\obj\Debug\net9.0\DeepInsight.Core.sourcelink.json
